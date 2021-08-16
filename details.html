@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bank</title>
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl text-center mt-8 font-bold">Login Area For <span class="text-green-500">Personal Bank</span></h1>
+    </header>
+    <main class=" w-3/4 mx-auto ">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="p-8 bg-blue-300 rounded">
+                    <h4 class="text-3xl text-semibold">Diposit</h4>
+                    <h2 class="text-5xl text-semibold">$<span id="dipo-total">00</span></h2>
+                </div>
+                <div class="p-8 bg-green-300 rounded">
+                    <h4 class="text-3xl text-semibold">Withdrow</h4>
+                    <h2 class="text-5xl text-semibold">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="p-8 bg-red-300 rounded">
+                    <h4 class="text-3xl text-semibold">Balance</h4>
+                    <h2 class="text-5xl text-semibold">$<span id="balance-total">1023</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="py-16 px-8 bg-purple-300 rounded">
+                    <h3 class="text-3xl text-white mb-4">Diposit Here</h3>
+                    <input id="dipo-input" class="px-2 block w-3/4 border rounded border-blue-200 py-2 mb-4" type="email" placeholder="Enter Diposit Amount">
+                    <button id="dipo-btn" class="block px-8 py-2 bg-purple-600 text-white text-medium rounded">Diposit</button>
+                </div>
+                <div class="py-16 px-8 bg-pink-300 rounded">
+                    <h3 class="text-3xl text-white mb-4">Withdraw Here</h3>
+                    <input id="withdraw-input" class="px-2 block w-3/4 border rounded border-blue-200 py-2 mb-4" type="email" placeholder="Enter Diposit Amount">
+                    <button id="withdraw-btn" class="block px-8 py-2 bg-pink-600 text-white text-medium rounded">withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/detail.js"></script>
+</body>
+</html>
